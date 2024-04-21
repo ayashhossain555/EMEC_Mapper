@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Keraniganj.kml</name>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#default_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default_highlight">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<body bgcolor="#000000" width="100%">
+      			<p><b><font color="#ffffff">$[NAME4/displayName]:</font></b> <font color="#DDDDDD">$[NAME4]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID0/displayName]:</font></b> <font color="#DDDDDD">$[ID0]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID1/displayName]:</font></b> <font color="#DDDDDD">$[ID1]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID2/displayName]:</font></b> <font color="#DDDDDD">$[ID2]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID3/displayName]:</font></b> <font color="#DDDDDD">$[ID3]</font></p>
+
+      			<p><b><font color="#ffffff">$[ShapeArea/displayName]:</font></b> <font color="#DDDDDD">$[ShapeArea]</font></p>
+
+      			<p><b><font color="#ffffff">$[ISO/displayName]:</font></b> <font color="#DDDDDD">$[ISO]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID4/displayName]:</font></b> <font color="#DDDDDD">$[ID4]</font></p>
+
+      			<p><b><font color="#ffffff">$[VALIDTO4/displayName]:</font></b> <font color="#DDDDDD">$[VALIDTO4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME0/displayName]:</font></b> <font color="#DDDDDD">$[NAME0]</font></p>
+
+      			<p><b><font color="#ffffff">$[ENGTYPE4/displayName]:</font></b> <font color="#DDDDDD">$[ENGTYPE4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME1/displayName]:</font></b> <font color="#DDDDDD">$[NAME1]</font></p>
+
+      			<p><b><font color="#ffffff">$[VARNAME4/displayName]:</font></b> <font color="#DDDDDD">$[VARNAME4]</font></p>
+
+      			<p><b><font color="#ffffff">$[VALIDFR4/displayName]:</font></b> <font color="#DDDDDD">$[VALIDFR4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME2/displayName]:</font></b> <font color="#DDDDDD">$[NAME2]</font></p>
+
+      			<p><b><font color="#ffffff">$[TYPE4/displayName]:</font></b> <font color="#DDDDDD">$[TYPE4]</font></p>
+
+      			<p><b><font color="#ffffff">$[REMARKS4/displayName]:</font></b> <font color="#DDDDDD">$[REMARKS4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME3/displayName]:</font></b> <font color="#DDDDDD">$[NAME3]</font></p>
+
+      			<p><b><font color="#ffffff">$[ShapeLeng/displayName]:</font></b> <font color="#DDDDDD">$[ShapeLeng]</font></p>
+
+      		<p align="center"><font size=3 face=arial color="#0099FF">Powered by GeoCommons</font></p>]]></text>
+			<bgColor>00000000</bgColor>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ddffffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ccff6600</color>
+		</PolyStyle>
+	</Style>
+	<Style id="default_normal">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<body bgcolor="#000000" width="100%">
+      			<p><b><font color="#ffffff">$[NAME4/displayName]:</font></b> <font color="#DDDDDD">$[NAME4]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID0/displayName]:</font></b> <font color="#DDDDDD">$[ID0]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID1/displayName]:</font></b> <font color="#DDDDDD">$[ID1]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID2/displayName]:</font></b> <font color="#DDDDDD">$[ID2]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID3/displayName]:</font></b> <font color="#DDDDDD">$[ID3]</font></p>
+
+      			<p><b><font color="#ffffff">$[ShapeArea/displayName]:</font></b> <font color="#DDDDDD">$[ShapeArea]</font></p>
+
+      			<p><b><font color="#ffffff">$[ISO/displayName]:</font></b> <font color="#DDDDDD">$[ISO]</font></p>
+
+      			<p><b><font color="#ffffff">$[ID4/displayName]:</font></b> <font color="#DDDDDD">$[ID4]</font></p>
+
+      			<p><b><font color="#ffffff">$[VALIDTO4/displayName]:</font></b> <font color="#DDDDDD">$[VALIDTO4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME0/displayName]:</font></b> <font color="#DDDDDD">$[NAME0]</font></p>
+
+      			<p><b><font color="#ffffff">$[ENGTYPE4/displayName]:</font></b> <font color="#DDDDDD">$[ENGTYPE4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME1/displayName]:</font></b> <font color="#DDDDDD">$[NAME1]</font></p>
+
+      			<p><b><font color="#ffffff">$[VARNAME4/displayName]:</font></b> <font color="#DDDDDD">$[VARNAME4]</font></p>
+
+      			<p><b><font color="#ffffff">$[VALIDFR4/displayName]:</font></b> <font color="#DDDDDD">$[VALIDFR4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME2/displayName]:</font></b> <font color="#DDDDDD">$[NAME2]</font></p>
+
+      			<p><b><font color="#ffffff">$[TYPE4/displayName]:</font></b> <font color="#DDDDDD">$[TYPE4]</font></p>
+
+      			<p><b><font color="#ffffff">$[REMARKS4/displayName]:</font></b> <font color="#DDDDDD">$[REMARKS4]</font></p>
+
+      			<p><b><font color="#ffffff">$[NAME3/displayName]:</font></b> <font color="#DDDDDD">$[NAME3]</font></p>
+
+      			<p><b><font color="#ffffff">$[ShapeLeng/displayName]:</font></b> <font color="#DDDDDD">$[ShapeLeng]</font></p>
+
+      		<p align="center"><font size=3 face=arial color="#0099FF">Powered by GeoCommons</font></p>]]></text>
+			<bgColor>00000000</bgColor>
+		</BalloonStyle>
+		<LineStyle>
+			<color>eeff6600</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>99ff6600</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Id 0:</name>
+		<styleUrl>#default</styleUrl>
+		<ExtendedData>
+			<Data name="Name4">
+				<displayName>Name 4</displayName>
+				<value>Keraniganj</value>
+			</Data>
+			<Data name="Id0">
+				<displayName>Id 0</displayName>
+				<value>23</value>
+			</Data>
+			<Data name="Id1">
+				<displayName>Id 1</displayName>
+				<value>327</value>
+			</Data>
+			<Data name="Id2">
+				<displayName>Id 2</displayName>
+				<value>3103</value>
+			</Data>
+			<Data name="ShapeArea">
+				<displayName>Shape_Area</displayName>
+				<value>0.015843313023</value>
+			</Data>
+			<Data name="Id3">
+				<displayName>Id 3</displayName>
+				<value>3641</value>
+			</Data>
+			<Data name="Validto4">
+				<displayName>Validto 4</displayName>
+				<value>Unknown</value>
+			</Data>
+			<Data name="Id4">
+				<displayName>Id 4</displayName>
+				<value>8885</value>
+			</Data>
+			<Data name="Iso">
+				<displayName>Iso</displayName>
+				<value>BGD</value>
+			</Data>
+			<Data name="Engtype4">
+				<displayName>Engtype 4</displayName>
+				<value>Sub-district</value>
+			</Data>
+			<Data name="Name0">
+				<displayName>Name 0</displayName>
+				<value>Bangladesh</value>
+			</Data>
+			<Data name="Validfr4">
+				<displayName>Validfr 4</displayName>
+				<value>Unknown</value>
+			</Data>
+			<Data name="Varname4">
+				<displayName>Varname 4</displayName>
+			</Data>
+			<Data name="Name1">
+				<displayName>Name 1</displayName>
+				<value>Dhaka</value>
+			</Data>
+			<Data name="Remarks4">
+				<displayName>Remarks 4</displayName>
+			</Data>
+			<Data name="Type4">
+				<displayName>Type 4</displayName>
+				<value>Upazila|Thana|Po</value>
+			</Data>
+			<Data name="Name2">
+				<displayName>Name 2</displayName>
+				<value>Dhaka</value>
+			</Data>
+			<Data name="ShapeLeng">
+				<displayName>Shape_Leng</displayName>
+				<value>0.726261025179</value>
+			</Data>
+			<Data name="Name3">
+				<displayName>Name 3</displayName>
+				<value>Dhaka</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							90.26857800000001,23.74583,0 90.271607,23.74508,0 90.27419399999999,23.746099,0 90.27719999999999,23.74723,0 90.28022899999999,23.748991,0 90.28305,23.749718,0 90.285156,23.749559,0 90.28692699999999,23.748661,0 90.288712,23.750049,0 90.289277,23.75478,0 90.28904699999998,23.75997,0 90.28961200000001,23.764551,0 90.29132099999998,23.767772,0 90.29316699999998,23.76972,0 90.29564000000001,23.771151,0 90.299148,23.772271,0 90.30245299999999,23.772761,0 90.30686300000001,23.77271,0 90.30986900000001,23.773501,0 90.31311,23.77393,0 90.315017,23.77315,0 90.316802,23.770591,0 90.31725299999999,23.76663,0 90.31667400000001,23.761431,0 90.316467,23.75853,0 90.31669700000001,23.75584,0 90.31931400000002,23.751489,0 90.322502,23.74787,0 90.32534900000002,23.745229,0 90.329757,23.743061,0 90.333946,23.741931,0 90.33822600000001,23.741541,0 90.34168999999999,23.743,0 90.345597,23.745331,0 90.34761799999998,23.746521,0 90.35153099999999,23.74214,0 90.35398100000001,23.73874,0 90.35475900000002,23.73765,0 90.356796,23.734979,0 90.35768099999999,23.73118,0 90.35914600000001,23.726111,0 90.36003900000002,23.722259,0 90.360917,23.718241,0 90.36106,23.717952,0 90.362259,23.715461,0 90.36406,23.713359,0 90.367921,23.711322,0 90.37061200000001,23.71005,0 90.37275000000001,23.70969,0 90.37419999999999,23.709462,0 90.378113,23.7093,0 90.38127900000001,23.709289,0 90.38706999999999,23.710109,0 90.38994599999998,23.71067,0 90.39259199999999,23.712151,0 90.39515600000001,23.712771,0 90.39801,23.712591,0 90.398552,23.712491,0 90.40029799999999,23.71219,0 90.40316799999999,23.71057,0 90.406671,23.70917,0 90.409401,23.707101,0 90.411956,23.70561,0 90.415206,23.70399,0 90.41584,23.703411,0 90.41755600000002,23.701811,0 90.41961599999999,23.69953,0 90.422141,23.6969,0 90.42537799999998,23.692699,0 90.427643,23.68962,0 90.42874200000001,23.688569,0 90.430542,23.68686,0 90.433441,23.684041,0 90.436958,23.681271,0 90.43955200000001,23.679241,0 90.440361,23.678609,0 90.44362700000001,23.675952,0 90.44690600000001,23.67347,0 90.44908100000001,23.671132,0 90.45188899999999,23.66957,0 90.452958,23.666072,0 90.455437,23.661591,0 90.45789400000001,23.658332,0 90.45951,23.656351,0 90.46127400000002,23.65487,0 90.46614899999999,23.650061,0 90.467612,23.64906,0 90.470254,23.64625,0 90.47281599999998,23.642522,0 90.472786,23.639659,0 90.471428,23.6373,0 90.46734600000001,23.63562,0 90.46032799999999,23.63351,0 90.456673,23.631561,0 90.450523,23.63124,0 90.447244,23.629439,0 90.444459,23.627792,0 90.439376,23.622142,0 90.43631100000002,23.618851,0 90.43189099999999,23.614151,0 90.429298,23.616451,0 90.426902,23.619199,0 90.42431600000001,23.622632,0 90.422203,23.626119,0 90.419005,23.629802,0 90.41377199999999,23.634782,0 90.41094200000001,23.63828,0 90.40718799999999,23.64164,0 90.40358700000002,23.643841,0 90.398696,23.64858,0 90.39556899999998,23.651761,0 90.391854,23.654191,0 90.38021900000001,23.65562,0 90.37667,23.65513,0 90.37091100000001,23.65562,0 90.367814,23.653291,0 90.366927,23.65097,0 90.362831,23.64661,0 90.35885699999999,23.64264,0 90.355499,23.64192900000001,0 90.348512,23.642838,0 90.345489,23.643431,0 90.34130900000001,23.64256,0 90.330825,23.647331,0 90.32781900000001,23.650779,0 90.322999,23.65363,0 90.317565,23.658849,0 90.31262900000002,23.662229,0 90.305076,23.667439,0 90.297302,23.67123,0 90.29036600000001,23.67419,0 90.28472100000001,23.676611,0 90.28188299999999,23.678851,0 90.28031999999999,23.681119,0 90.27802200000001,23.68758,0 90.27628300000001,23.694139,0 90.27452200000001,23.69578,0 90.272042,23.698009,0 90.270447,23.700911,0 90.268607,23.70422,0 90.26531199999999,23.708571,0 90.26209400000001,23.71106,0 90.25797300000002,23.71452,0 90.25524900000001,23.719449,0 90.25682000000001,23.72233,0 90.256897,23.725412,0 90.256446,23.727021,0 90.25469999999999,23.72878,0 90.25219099999998,23.730211,0 90.25019000000002,23.731921,0 90.24830699999998,23.73345,0 90.24267500000001,23.73631900000001,0 90.240082,23.737131,0 90.235947,23.73825,0 90.230637,23.739351,0 90.226769,23.740641,0 90.22490000000002,23.74274,0 90.223952,23.746421,0 90.22358800000001,23.749691,0 90.223968,23.751802,0 90.22640199999999,23.754432,0 90.22920299999998,23.756991,0 90.229477,23.760241,0 90.229607,23.762871,0 90.230667,23.765301,0 90.23287999999999,23.768462,0 90.235015,23.771949,0 90.238381,23.776501,0 90.242561,23.781722,0 90.247199,23.776412,0 90.25020599999999,23.773251,0 90.25277599999998,23.769531,0 90.25459300000001,23.767199,0 90.25573,23.763521,0 90.255737,23.759861,0 90.255493,23.75677,0 90.25585100000001,23.75225100000001,0 90.25653000000001,23.75000100000001,0 90.258262,23.747681,0 90.26088799999999,23.74601,0 90.264236,23.745942,0 90.26857800000001,23.74583,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

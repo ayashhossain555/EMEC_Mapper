@@ -1,0 +1,91 @@
+import { Link } from "react-router-dom";
+import React from "react";
+import { fromLonLat } from "ol/proj";
+import GeoJSON from "ol/format/GeoJSON";
+import {
+  RMap,
+  ROSM,
+  RLayerTile,
+  RLayerVector,
+  RControl,
+  RStyle,
+  RLayerTileJSON,
+  RLayerWMS,
+  RLayerTileWMS,
+} from "rlayers";
+import RLayerStadia from "rlayers/layer/RLayerStadia";
+import "ol/ol.css";
+import "rlayers/control/layers.css";
+
+const layersButton = <button>&#9776;</button>;
+
+export default function Layers(): JSX.Element {
+  return (
+    <div>
+        <h1 className='font-bold text-4xl text-center uppercase text-accent mt-16 mb-8'>WebGL Multilayer Map</h1>
+
+      <RMap
+        className="example-map"
+        width={"100%"}
+                height={"60vh"}
+        initial={{ center: fromLonLat([2.364, 48.82]), zoom: 7 }}
+      >
+        <RControl.RLayers element={layersButton}>
+          <ROSM properties={{ label: "OpenStreetMap" }} />
+          <RLayerTile
+            properties={{ label: "OpenTopo" }}
+            url="https://{a-c}.tile.opentopomap.org/{z}/{x}/{y}.png"
+            attributions="Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)"
+          />
+          <RLayerTile
+            properties={{ label: "Transport" }}
+            url="http://tile.thunderforest.com/transport/{z}/{x}/{y}.png"
+          />
+          <RLayerStadia
+            properties={{ label: "Stadia Terrain Background" }}
+            layer="stamen_terrain_background"
+          />
+          <RLayerTileJSON
+            properties={{ label: "Mapbox TileJSON" }}
+            url="https://a.tiles.mapbox.com/v3/aj.1x1-degrees.json?secure=1"
+          />
+          <RLayerWMS
+            properties={{ label: "Magellium OSM France Schools WMS" }}
+            url="https://magosm.magellium.com/geoserver/ows"
+            params={{
+              LAYERS: "magosm:france_schools_point",
+              FORMAT: "image/jpeg",
+            }}
+          />
+          <RLayerTileWMS
+            properties={{ label: "Switzerland ArcGIS TileWMS" }}
+            url="https://wms.geo.admin.ch/"
+            params={{
+              LAYERS: "ch.swisstopo.pixelkarte-farbe-pk1000.noscale",
+              FORMAT: "image/jpeg",
+              serverType: "mapserver",
+            }}
+          />
+        </RControl.RLayers>
+        {/* This one is always visible */}
+        <RLayerVector
+          zIndex={5}
+          format={new GeoJSON({ featureProjection: "EPSG:3857" })}
+          url="https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements.geojson"
+        >
+          <RStyle.RStyle>
+            <RStyle.RStroke color="#007bff" width={3} />
+            <RStyle.RFill color="transparent" />
+          </RStyle.RStyle>
+        </RLayerVector>
+      </RMap>
+      <p>
+        Use the upper right corner to switch the active
+        layer.
+      </p>
+      <div className="flex items-center justify-center">
+        <Link to="/"><button className="btn btn-accent my-8">Go Back</button></Link>
+      </div>
+    </div>
+  );
+}
