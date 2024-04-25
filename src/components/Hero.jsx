@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className="drawer drawer-end">
                         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                         <div className="drawer-content">
-                            <label htmlFor="my-drawer-4" className="drawer-button btn btn-accent">Get started</label>
+                        <NavLink to="/signup"><label htmlFor="my-drawer-4" className="drawer-button btn text-lg font-semibold btn-accent">Sign Up</label></NavLink>
                         </div> 
                         <div className="drawer-side">
                             <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>

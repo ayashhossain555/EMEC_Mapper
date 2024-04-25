@@ -18,6 +18,13 @@ import VectorTiles from './components/maps/VectorTile';
 import KmlFile from './components/maps/KmlFile';
 import Gpx from './components/maps/GpxFile';
 import TopoJSON from './components/maps/TopoJson';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+import AuthProvider from './providers/AuthProvider';
+import Dashboard from './components/Dashboard';
+import PrivateRoute from './routes/PrivateRoutes';
+import Profile from './components/Profile';
+
 
 // npm install topojson-client
 // npm install ol-mbtiles
@@ -74,6 +81,23 @@ const router = createBrowserRouter([
         path: '/topojson',
         element: <TopoJSON></TopoJSON>
       },
+      {
+        path: '/signin',
+        element: <SignIn></SignIn>
+      },
+      {
+        path: '/signup',
+        element: <SignUp></SignUp>
+      },
+      {
+        path: '/dashboard',
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
+      },
+     
+      {
+        path: '/profile',
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
      
     ]
   },
@@ -81,6 +105,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
